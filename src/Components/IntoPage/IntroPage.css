@@ -1,0 +1,94 @@
+.intro-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #1f1f2e, #2e2e3e);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+  transition: transform 0.3s ease;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  background: linear-gradient(90deg, #00d2ff, #3a47d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.intro-paragraph {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00d2ff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  transition: transform 0.3s ease;
+}
+
+.intro-paragraph:hover {
+  transform: scale(1.015);
+}
+
+.intro-paragraph strong {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.intro-paragraph em {
+  color: #7ed6df;
+}
+
+.intro-paragraph a {
+  color: #00d2ff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.2s ease;
+}
+.intro-paragraph a:hover {
+  color: #82ccdd;
+}
+
+.intro-paragraph ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.intro-paragraph li {
+  margin-bottom: 6px;
+}
+
+.implement-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(90deg, #16a085, #2ecc71);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(22, 160, 133, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.implement-button:hover {
+  background: linear-gradient(90deg, #2ecc71, #16a085);
+  transform: scale(1.05);
+}

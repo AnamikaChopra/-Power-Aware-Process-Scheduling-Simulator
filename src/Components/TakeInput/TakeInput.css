@@ -1,0 +1,251 @@
+.take-input-container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #222, #111);
+  border-radius: 12px;
+  color: #00ffcc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 30px #00ffcc88;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input-group label {
+  font-weight: 600;
+  min-width: 150px;
+  color: #00ffcc;
+}
+
+.input-group input[type="number"] {
+  width: 70px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1.5px solid #00ffcc;
+  background-color: #1c1c1c;
+  color: #00ffcc;
+  text-align: center;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="number"]:focus {
+  border-color: #00ffee;
+  box-shadow: 0 0 8px #00ffeeaa;
+}
+
+.generate-btn {
+  background: #00ffcc;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 15px #00ffcc;
+  transform: scale(1.05);
+}
+
+.available-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #00ffcc;
+  font-weight: 600;
+}
+
+.available-inputs label {
+  min-width: 150px;
+}
+
+.available-inputs input[type="number"] {
+  width: 50px;
+  padding: 5px 7px;
+  border-radius: 6px;
+  border: 1.5px solid #00ffcc;
+  background: #1c1c1c;
+  color: #00ffcc;
+  text-align: center;
+  outline: none;
+  font-weight: 600;
+  transition: border-color 0.3s ease;
+}
+
+.available-inputs input[type="number"]:focus {
+  border-color: #00ffee;
+  box-shadow: 0 0 8px #00ffeeaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  table-layout: fixed; 
+}
+
+thead th {
+  background-color: #004040;
+  color: #00ffcc;
+  padding: 12px 6px;
+  font-weight: 700;
+  border: 1px solid #007f7f;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+thead th.process-col {
+  width: 8%;
+}
+
+thead th.allocation-col,
+thead th.request-col {
+  width: 26%;
+}
+
+thead th.power-col {
+  width: 14%;
+}
+
+tbody td {
+  background-color: #0b2a2a;
+  border: 1px solid #007f7f;
+  padding: 6px 4px;
+  text-align: center;
+  color: #00ffcc;
+  font-weight: 600;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+tbody td.process-col {
+  font-weight: 700;
+}
+
+tbody input[type="number"] {
+  width: 40px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1.2px solid #00ffcc;
+  background-color: #122222;
+  color: #00ffcc;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-size: 13px;
+}
+
+tbody input[type="number"]:focus {
+  border-color: #00ffee;
+  box-shadow: 0 0 6px #00ffeeaa;
+}
+
+/* Submit button */
+.submit-table {
+  margin-top: 25px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.submit-table:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 18px #00ffcc;
+  transform: translateY(-2px);
+}
+
+.post-check-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 18px;
+  text-shadow:
+    0 0 6px #00ffcc,
+    0 0 12px #00ffcc,
+    0 0 18px #00ffcc;
+}
+
+@media (max-width: 680px) {
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .available-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  tbody input[type="number"] {
+    width: 35px;
+  }
+
+  .submit-table {
+    width: 100%;
+  }
+}
+.mode-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.performance {
+  background-color: #007bff;
+  color: white;
+}
+
+.power-saving {
+  background-color: #28a745;
+  color: white;
+}
+
+.mode-button:hover {
+  opacity: 0.85;
+}

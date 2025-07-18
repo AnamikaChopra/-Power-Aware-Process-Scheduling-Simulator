@@ -1,0 +1,158 @@
+/** PowSav.css **/
+.pow-sav-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f4f6fa;
+  color: #333;
+  min-height: 100vh;
+}
+
+.back-button {
+  background-color: #007acc;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+  margin-bottom: 1rem;
+}
+.back-button:hover {
+  background-color: #005fa3;
+}
+
+.burst-input {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+.burst-input h2 {
+  margin-bottom: 1rem;
+  color: #005fa3;
+  text-align: center;
+}
+.burst-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.burst-row label {
+  flex: 0 0 80px;
+  font-weight: 500;
+}
+.burst-row input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+.submit-burst {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #00a65a;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+.submit-burst:hover {
+  background-color: #008f4c;
+}
+
+.original-info {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  margin: 1.5rem 0;
+}
+.original-info h2 {
+  margin-bottom: 0.75rem;
+  color: #005fa3;
+}
+.original-info ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.original-info li {
+  background: #e1f0ff;
+  color: #005fa3;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mode-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+.mode-section h2 {
+  margin-bottom: 1rem;
+  color: #005fa3;
+  text-align: center;
+}
+
+.charts-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chart {
+  flex: 1 1 280px;
+  background: #fafbfc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.chart h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.summary {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.summary p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.toggle-button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #005fa3;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+.toggle-button:hover {
+  background-color: #004080;
+}
